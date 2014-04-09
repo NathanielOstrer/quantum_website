@@ -14,6 +14,17 @@
     <![endif]-->
     <script>
 
+    var evW = 0;
+    var evG = 0;
+    var evF = 0;
+    var spock = 0;
+
+    var spocks = new Array("spock.png", "spock.jpg");
+    var evWs = new Array("squirtle.png", "wartortle.png", "blastoise.png");
+    var evGs = new Array("bulbasaur.png", "ivysaur.png", "venusaur.png");
+    var evFs = new Array("charmander.png", "charmeleon.png", "charizard.png");
+
+    
      var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-23019901-1']);
       _gaq.push(['_setDomainName', "bootswatch.com"]);
@@ -93,19 +104,19 @@
                 <tbody>
                   <tr>
                     <td>Dillon</td>
-                    <td><image src="http://img2.wikia.nocookie.net/__cb20120311033504/memoryalpha/en/images/e/e8/Picard2379.jpg" height=100 width=100> </img></td>
+                    <td><image src="people/dillon.png" height=100 width=100> </img></td>
                     <td>Captain</td>
                     <td>Programming, Building</td>
                   </tr>
                   <tr>
                     <td>Elana</td>
-                    <td><image src="http://img3.wikia.nocookie.net/__cb20090531122034/memoryalpha/en/images/4/44/Kathryn_Janeway,_2371.jpg" height=100 width=100> </img></td>
+                    <td><image src="people/elana.png" height=100 width=100> </img></td>
                     <td>Captain</td>
                     <td>Research, Building</td>
                   </tr>
                   <tr>
                     <td>Soleil</td>
-                    <td><image src="http://spinoff.comicbookresources.com/wp-content/uploads/2013/09/alice-eve1.jpg" height=100 width=100> </img></td>
+                    <td><image src="people/soleil.png" height=100 width=100> </img></td>
                     <td>Captain</td>
                     <td>Building</td>
                   </tr>
@@ -115,71 +126,84 @@
                     <td>Member</td>
                     <td>Building</td>
                   </tr>
+                  <!--
+                  onclick="document.getElementById('batman').src=spocks[++spock%2];"
+                -->
                   <tr>
                     <td>Nathaniel</td>
-                    <td><image src="http://img2.wikia.nocookie.net/__cb20070802000211/memoryalpha/en/images/2/27/Spock,_2267.jpg" height=100 width=100> </img></td>
+                    <td><image id="batman" src="spock.png" height=100 width=100> </img></td>
                     <td>Member</td>
                     <td>Programming</td>
                   </tr>
                   <tr>
                     <td>Chris</td>
-                    <td><image src="http://www.startrek.com/legacy_media/images/200307/kirk01/320x240.jpg" height=100 width=100> </img></td>
+                    <td><image src="people/chris.png" height=100 width=100> </img></td>
                     <td>Member</td>
                     <td>Building</td>
                   </tr>
                   <tr>
                     <td>Meet</td>
-                    <td><image src="http://img2.wikia.nocookie.net/__cb20100529074418/memoryalpha/en/images/2/27/Worf2379.jpg" height=100 width=100> </img></td>
+                    <td><image src="people/meet.png" height=100 width=100> </img></td>
                     <td>Member</td>
                     <td>Building</td>
                   </tr>
                   <tr>
                     <td>Zach</td>
-                    <td><image src="http://img1.wikia.nocookie.net/__cb20070129210222/memoryalpha/pl/images/6/6a/Archer.jpg" height=100 width=100> </img></td>
+                    <td><image src="people/zach.png" height=100 width=100> </img></td>
                     <td>Member</td>
                     <td>Building</td>
                   </tr>
                   <tr>
                     <td>Daniel</td>
-                    <td><image src="http://img1.wikia.nocookie.net/__cb20120121073525/memoryalpha/en/images/d/de/Pavel_Chekov,_2293.jpg" height=100 width=100> </img></td>
+                    <td><image src="people/daniel.png" height=100 width=100> </img></td>
                     <td>Member</td>
                     <td>Building</td>
                   </tr>
                   <tr>
                     <td>Charlie</td>
-                    <td><image src="http://img3.wikia.nocookie.net/__cb20130213024734/memoryalpha/en/images/4/4f/Riker_orders_Worf_to_fire_on_the_Borg_cube.jpg" height=100 width=100> </img></td>
+                    <td><image src="people/charlie.png" height=100 width=100> </img></td>
                     <td>Member</td>
                     <td>Building</td>
                   </tr>
                   <tr>
                     <td>Sitoe</td>
-                    <td><image src="http://img2.wikia.nocookie.net/__cb20110417164842/memoryalpha/en/images/1/1d/Uhura.jpg" height=100 width=100> </img></td>
+                    <td><image src="people/sitoe.png" height=100 width=100> </img></td>
                     <td>Member</td>
                     <td>Building</td>
                   </tr>
-                 <!-- 
-                  where's da clair info?
+                  <!--
+                  Cleb Lervicka
+                  <tr>
+                    <td>Cal</td>
+                    <td><image src="http://upload.wikimedia.org/wikipedia/en/0/00/Le_Chiffre_by_Mads_Mikkelsen.jpg" height=100 width=100></td>
+                    <td>Robogamer</td>
+                    <td>Progamming</td>
+                  -->
                  <tr>
-                    <td>Clair</td>
-                    <td><image src="http://img2.wikia.nocookie.net/__cb20070802000211/memoryalpha/en/images/2/27/Spock,_2267.jpg" height=100 width=100> </img></td>
+                    <td>Clare</td>
+                    <td><image src="people/clare.png" height=100 width=100> </img></td>
                     <td>Member</td>
-                    <td>Programming</td>
-                  </tr> -->
+                    <td> Building </td>
+                  </tr> 
                   <tr>
                     <td>Michael Sloan "MSW" Warren</td>
-                    <td><image src="http://cdn.bulbagarden.net/upload/thumb/2/21/001Bulbasaur.png/250px-001Bulbasaur.png" height=100 width=100> </img></td>
+                    <td><image id="msw" src="squirtle.png" height=100 width=100 onclick="if(evW!=2) evW++; document.getElementById('msw').src=evWs[evW%3];"> </img></td>
                     <td>Coach</td>
                   </tr>
                   <tr>
                     <td>Charlie "Chuckles" Forster</td>
-                    <td><image src="http://cdn.bulbagarden.net/upload/thumb/7/73/004Charmander.png/250px-004Charmander.png" height=100 width=100> </img></td>
+                    <td><image id="chuck" src="charmander.png" height=100 width=100 onclick="if(evF!=2) evF++; document.getElementById('chuck').src=evFs[evF%3];"> </img></td>
                     <td>Coach</td>
                   </tr>
                   <tr>
-                    <td>Rob "rob-bob-bot" Quatrone</td>
-                    <td><image src="http://cdn.bulbagarden.net/upload/thumb/3/39/007Squirtle.png/250px-007Squirtle.png" height=100 width=100> </img></td>
+                    <td>Rob "Rob-bob-bot" Quatrone</td>
+                    <td><image id="rob" src="bulbasaur.png" height=100 width=100 onclick="if(evG!=2) evG++; document.getElementById('rob').src=evGs[evG%3];"> </img></td>
                     <td>Coach</td>
                   </tr>
+                  <tr> 
+                    <td>Gordon "Gordie" Campbell</td>
+                    <td><image src="oak.png" height=100 width=100> </img></td>
+                    <td> Head of Computer Science </td>
                 </tbody>
               </table> 
             </div><!-- /example -->
